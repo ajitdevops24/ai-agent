@@ -37,6 +37,7 @@ ollama run qwen3:1.7b
 | Day | Topic | Status |
 |-----|-------|--------|
 | [Day 01](./Day01-hello-ai) | Hello AI: first call to a local LLM | ✅ |
+| [Day 02](./Day02-chat-memory) | Chat assistant with conversation memory | ✅ |
 
 ## Author
 Ajit Kumar Satapathy
