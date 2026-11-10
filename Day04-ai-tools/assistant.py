@@ -1,13 +1,13 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-
+'''
 from tools import (
     get_current_time,
     roll_dice,
     generate_password
 )
-
+'''
 from tool_manager import execute_tool
 
 
