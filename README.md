@@ -39,6 +39,7 @@ ollama run qwen3:1.7b
 | [Day 01](./Day01-hello-ai) | Hello AI: first call to a local LLM | ✅ |
 | [Day 02](./Day02-chat-memory) | Chat assistant with conversation memory | ✅ |
 | [Day 03](./Day03-prompt-engineering) | Prompt engineering: role-based assistants | ✅ |
+| [Day 04](./Day04-ai-tools) | Tools: time, dice, password generator | ✅ |
 
 ## Author
 Ajit Kumar Satapathy
