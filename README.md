@@ -24,8 +24,8 @@ Python, Ollama (`qwen3:1.7b`), OpenAI-compatible API, python-dotenv, Git, VS Cod
 
 ## Quick Start
 ```bash
-git clone https://github.com/ajitdevops24/AI-Agent-Development.git
-cd AI-Agent-Development
+git clone https://github.com/ajitdevops24/ai-agent.git
+cd ai-agent
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
