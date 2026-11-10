@@ -33,6 +33,23 @@ cp .env.example .env
 ollama run qwen3:1.7b
 ```
 
+## Roadmap (21 days)
+
+**Days 1-6: Build the Foundation**
+- Chatbot, conversation memory, prompt engineering, tools, document apps, first RAG system
+
+**Days 7-13: Enter the World of AI Agents**
+- First agent, MCP, autonomous agents, advanced planning, memory engineering, advanced RAG, MCP in depth
+
+**Days 14-15: Advanced and Production-Ready Agents**
+- Multi-agent systems, orchestration, making agents production-ready
+
+**Days 16-18: Agent Engineering Frameworks**
+- LangChain, LangGraph, CrewAI
+
+**Days 19-21: Research Agent and Capstone**
+- AI Research Agent, deployment, capstone: Research AI Agent Platform
+
 ## Progress
 | Day | Topic | Status |
 |-----|-------|--------|
