@@ -71,8 +71,5 @@ The prompt tells the model to answer only from the document and to say "I couldn
 - Only `.txt` files are supported, and files are read once per question
 - No conversation memory, so each question stands alone
 
-## Problems I solved
--
-
 ## Next
 Day 06: first RAG system. Instead of sending the whole document, split it into chunks and send only the parts relevant to the question.
