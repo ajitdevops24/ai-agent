@@ -1,0 +1,75 @@
+================================================================================
+                           PROJECT CHARTER & SUMMARY
+================================================================================
+
+PROJECT NAME:       Enterprise Kubernetes Migration & Modernization (Project KubeCore)
+PROJECT MANAGER:    Sarah Jenkins (sarah.jenkins@company.com)
+SPONSOR:            David Vance, VP of Infrastructure
+DOCUMENT DATE:      November 11, 2026
+STATUS:             Approved / Active
+
+--------------------------------------------------------------------------------
+1. PROJECT SUMMARY
+--------------------------------------------------------------------------------
+Project KubeCore aims to containerize and migrate the company's legacy monolithic 
+customer portal into a highly available, auto-scaling Kubernetes cluster hosted 
+on AWS (EKS). 
+
+The primary business drivers are reducing cloud infrastructure spend, improving 
+application deployment frequencies from bi-weekly to multiple times per day, 
+and ensuring zero-downtime upgrades via rolling deployment strategies.
+
+Key Deliverables:
+* Production-ready AWS EKS Cluster infrastructure built via Terraform.
+* Automated CI/CD deployment pipelines using GitHub Actions and ArgoCD.
+* Migrated Customer Portal microservices with centralized logging (Grafana Loki) 
+  and monitoring (Prometheus/Grafana).
+
+--------------------------------------------------------------------------------
+2. PROJECT DURATION & TIMELINE
+--------------------------------------------------------------------------------
+Total Estimated Duration: 6 Months
+Target Start Date:        January 4, 2027
+Target Completion Date:   June 25, 2027
+
+Milestone Schedule:
+* Phase 1: Architecture Design & Discovery       (Weeks 1 - 4)  | Target: Jan 29
+* Phase 2: Infrastructure as Code (IaC) Setup    (Weeks 5 - 10) | Target: Mar 12
+* Phase 3: Application Containerization          (Weeks 11 - 16)| Target: Apr 23
+* Phase 4: CI/CD & GitOps Pipeline Integration   (Weeks 17 - 20)| Target: May 21
+* Phase 5: Testing, Security Audits & Dry Runs   (Weeks 21 - 24)| Target: Jun 18
+* Phase 6: Production Cutover & Hypercare        (Week 25)      | Target: Jun 25
+
+--------------------------------------------------------------------------------
+3. ESTIMATED PROJECT COST & BUDGET
+--------------------------------------------------------------------------------
+Total Allocated Budget: $245,000 USD
+
+Cost Breakdown:
+* Internal Engineering Resource Allocations:    $140,000
+* External Cloud Architecture Consulting Fees:  $45,000
+* AWS Temporary Sandbox/Staging Infrastructure: $25,000
+* Enterprise Software Licensing & Tooling:     $20,000
+* Contingency Reserve (7.5% Buffer):            $15,000
+
+--------------------------------------------------------------------------------
+4. PEOPLE INVOLVED (RACI MATRIX)
+--------------------------------------------------------------------------------
+The project team consists of core internal staff and specialized platform 
+engineers responsible for the infrastructure delivery.
+
+Name               Role                   RACI Status  Contact
+--------------------------------------------------------------------------------
+Sarah Jenkins      Project Manager        Accountable  s.jenkins@company.com
+David Vance        VP of Infrastructure   Informed     d.vance@company.com
+Alex Chen          Lead DevOps Engineer   Responsible  a.chen@company.com
+Elena Rostova      Cloud Architect        Responsible  e.rostova@company.com
+Marcus Brody       Senior SecOps Analyst  Consulted    m.brody@company.com
+Priya Nair         Lead QA Engineer       Responsible  p.nair@company.com
+
+* R: Responsible (Does the work)
+* A: Accountable (Approves the work / Final owner)
+* C: Consulted (Provides critical input/feedback)
+* I: Informed (Kept updated on progress)
+
+================================================================================

@@ -57,6 +57,7 @@ ollama run qwen3:1.7b
 | [Day 02](./Day02-chat-memory) | Chat assistant with conversation memory | ✅ |
 | [Day 03](./Day03-prompt-engineering) | Prompt engineering: role-based assistants | ✅ |
 | [Day 04](./Day04-ai-tools) | Tools: time, dice, password generator | ✅ |
+| [Day 05](./Day05-ai-document) | Document assistant: summarize, explain, ask | ✅ |
 
 ## Author
 Ajit Kumar Satapathy
