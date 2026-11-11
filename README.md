@@ -13,7 +13,7 @@ Build AI agents from scratch in Python, from a first chatbot to a production-rea
 - A deployed capstone project: Research AI Agent Platform
 
 ## Tech Stack
-Python, Ollama (`qwen3:1.7b`), OpenAI-compatible API, python-dotenv, Git, VS Code on WSL (Ubuntu). More added as the days progress (LangChain, LangGraph, CrewAI, MCP, FastAPI, Docker).
+Python, Ollama (`qwen3:1.7b`,`qwen3:4b`), OpenAI-compatible API, python-dotenv, Git, VS Code on WSL (Ubuntu). More added as the days progress (LangChain, LangGraph, CrewAI, MCP, FastAPI, Docker).
 
 ## Prerequisites
 1. Python 3.10+ (`python3 --version`)
