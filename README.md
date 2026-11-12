@@ -58,6 +58,7 @@ ollama run qwen3:1.7b
 | [Day 03](./Day03-prompt-engineering) | Prompt engineering: role-based assistants | ✅ |
 | [Day 04](./Day04-ai-tools) | Tools: time, dice, password generator | ✅ |
 | [Day 05](./Day05-ai-document) | Document assistant: summarize, explain, ask | ✅ |
+| [Day 06](./Day06-first-rag) | First RAG: DevOps knowledge assistant with embeddings | ✅ |
 
 ## Author
 Ajit Kumar Satapathy

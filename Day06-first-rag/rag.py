@@ -55,6 +55,9 @@ while True:
 
         # Use the best document as context for the model
         best_score, best_file = ranked[0]
+        if best_score < 0.40:
+            print("\nAI : No relevant document found.")
+            continue
         prompt = make_prompt(documents[best_file], user_input)
 
         print("\nAI :", ask_ai(prompt))
