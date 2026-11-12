@@ -1,0 +1,9 @@
+Kubernetes Basics
+
+Kubernetes (K8s) is a platform that runs and manages containers across a cluster of machines.
+
+A Pod is the smallest unit in Kubernetes. It holds one or more containers. A Deployment manages a set of identical Pods and handles rolling updates and rollbacks. A Service gives Pods a stable network address. A Namespace separates resources inside one cluster.
+
+Common commands: kubectl get pods lists Pods. kubectl describe pod <name> shows events and details. kubectl logs <name> shows container logs, and kubectl logs --previous shows the logs of the last crashed container. kubectl rollout undo deployment <name> rolls back a Deployment.
+
+Common Pod problems: CrashLoopBackOff means the container keeps starting and crashing; check the logs and the application configuration. ImagePullBackOff means Kubernetes cannot download the image; check the image name, tag and registry credentials. Pending means the Pod cannot be scheduled, often because the cluster does not have enough CPU or memory. OOMKilled means the container used more memory than its limit.

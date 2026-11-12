@@ -1,0 +1,9 @@
+CI/CD Pipeline Basics
+
+CI (continuous integration) means developers merge code often, and every change is built and tested automatically. CD means continuous delivery or deployment: a tested change can be released to an environment automatically.
+
+A typical pipeline has these stages: checkout the code, build, run unit tests, scan the code and dependencies for security problems, build and push a container image, deploy to staging, run integration tests, then deploy to production.
+
+GitHub Actions runs pipelines defined in YAML files in the .github/workflows folder. Jenkins uses a Jenkinsfile. GitOps tools such as ArgoCD watch a Git repository and keep the Kubernetes cluster in sync with it.
+
+Good practices: keep pipelines fast, fail early, never print secrets in logs, store secrets in the CI secret store, and make deployments easy to roll back. Common causes of pipeline failure: a failing test, a missing environment variable or secret, an expired credential, and a wrong image tag.

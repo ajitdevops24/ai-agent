@@ -1,0 +1,11 @@
+Monitoring with Prometheus and Grafana
+
+Monitoring shows whether systems are healthy. Observability adds the ability to understand why something is wrong, using metrics, logs and traces.
+
+Prometheus collects metrics by scraping HTTP endpoints at regular intervals and stores them as time series. PromQL is its query language. Alertmanager receives alerts from Prometheus and sends notifications, for example to Slack or email. Grafana builds dashboards from data sources such as Prometheus and Loki. Loki stores and searches logs.
+
+Important signals, often called the four golden signals: latency, traffic, errors and saturation. In Kubernetes, watch Pod restarts, CPU and memory use against limits, and node health.
+
+Good practices: alert on symptoms that affect users, not on every small change; give each alert a clear owner and a runbook; avoid too many alerts so people do not ignore them.
+
+Querying data in Grafana: open Explore or edit a dashboard panel, choose a data source such as Prometheus or Loki, and write a query in that source's language, which is PromQL for Prometheus and LogQL for Loki. Use the query results to build panels and alerts.

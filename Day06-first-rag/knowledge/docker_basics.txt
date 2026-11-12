@@ -1,0 +1,9 @@
+Docker Basics
+
+Docker packages an application and everything it needs into an image. A running copy of an image is a container.
+
+A Dockerfile is the recipe for building an image. Common instructions: FROM chooses the base image, COPY adds files, RUN executes a command during the build, and CMD sets the command that runs when the container starts.
+
+Best practices: use small base images, use multi-stage builds so the final image contains only what is needed to run the application, do not store secrets in images, pin image versions instead of using the latest tag, and run the container as a non-root user.
+
+Common commands: docker build -t myapp:1.0 . builds an image. docker run -d -p 8080:80 myapp:1.0 starts a container. docker ps lists running containers. docker logs <container> shows logs. docker exec -it <container> sh opens a shell inside a container.

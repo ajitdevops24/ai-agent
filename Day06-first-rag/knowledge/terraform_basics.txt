@@ -1,0 +1,9 @@
+Terraform Basics
+
+Terraform is an infrastructure as code tool. You describe cloud resources in .tf files, and Terraform creates, changes or deletes them to match the code.
+
+Main commands: terraform init downloads providers and sets up the backend. terraform plan shows what will change without changing anything. terraform apply makes the changes. terraform destroy removes the resources.
+
+The state file records which real resources Terraform manages. For teams, store state in a remote backend, such as an S3 bucket with state locking, instead of on a laptop. Never commit state files to Git because they can contain secrets.
+
+Good practices: use variables and modules to avoid repetition, always review the plan before apply, pin provider versions, and keep environments such as dev and prod in separate state. Drift means the real infrastructure was changed outside Terraform and no longer matches the code.
