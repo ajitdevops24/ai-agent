@@ -59,6 +59,7 @@ ollama run qwen3:1.7b
 | [Day 04](./Day04-ai-tools) | Tools: time, dice, password generator | ✅ |
 | [Day 05](./Day05-ai-document) | Document assistant: summarize, explain, ask | ✅ |
 | [Day 06](./Day06-first-rag) | First RAG: DevOps knowledge assistant with embeddings | ✅ |
+| [Day 07](./Day07-first-agent) | First AI agent: the model plans which tool to use, Python runs it | ✅ |
 
 ## Author
 Ajit Kumar Satapathy
