@@ -65,19 +65,13 @@ flowchart TD
 
 The MCP server does the actual system-information work. The model only chooses which available tool to call; it does not read the machine's RAM or uptime itself.
 
-## Debugging practice in VS Code
+## Output
 
-Use the **Python Debugger: Python File** configuration. Set breakpoints by clicking the gutter beside these statements in `agent.py`:
+![MCP agent demo](./screenshots/mcp-demo.png)
 
-1. `tools = await mcp.list_tools()` — after pressing **F10**, inspect `tools` in the Variables panel. It should contain `memory_usage`, `system_uptime`, and `host_info`.
-2. `user_input = (await asyncio.to_thread(input, "\nYou : ")).strip()` — press **F10** to run the input line, then type `How long has this machine been running?` in the Terminal and press Enter.
-3. `reply = response.choices[0].message.content` — press **F10** to assign the model response, then inspect `reply`. It should be plain JSON, for example `{"tool":"system_uptime","arguments":{}}`.
-4. `plan = json.loads(reply)` — press **F10** and inspect `plan`. It should now be a Python dictionary.
-5. `result = await mcp.call_tool(tool_name, arguments)` — inspect `tool_name` and `arguments`; for the uptime question, expect `system_uptime` and `{}`. Press **F10** to run the tool call.
-
-**Controls:** **F5** continues execution to the next breakpoint; **F10** runs the current line and pauses at the next line. When the input line pauses, enter your question in the integrated Terminal, not the Debug Console.
-
-If execution fails at `json.loads(reply)`, inspect `reply`: the planner is expected to return plain JSON. This version does not remove Markdown code fences or extra text.
+- The agent discovers and lists the three tools exposed by the MCP server.
+- Requests about uptime and memory are handled by their respective MCP tools.
+- A general DevOps question receives a normal AI answer because it does not need a tool.
 
 ## Key concepts
 
