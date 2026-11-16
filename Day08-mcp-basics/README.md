@@ -56,7 +56,7 @@ flowchart TD
     O --> A
 ```
 
-1. **Connect:** `Client("server.py")` connects the agent to the local MCP server.
+1. **Connect:** `Client(Path(__file__).resolve().with_name("server.py"))` connects the agent to the local MCP server.
 2. **Discover:** `mcp.list_tools()` gets the tools and their input schemas from the server.
 3. **Plan:** `choose_tool()` sends the user request and available tools to the model. The model is asked to return JSON containing a tool name and arguments, or `null` when no tool is needed.
 4. **Validate:** the agent parses the JSON, checks that the tool exists, confirms the arguments are an object, and rejects argument names the tool does not support.

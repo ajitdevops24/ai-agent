@@ -4,6 +4,7 @@ from fastmcp import Client
 import asyncio
 import json
 import os
+from pathlib import Path
 
 # Load configuration
 load_dotenv()
@@ -110,7 +111,7 @@ def result_to_text(result):
 async def main():
 
     # Step 1: connect to the MCP server (this starts server.py in the background)
-    async with Client("server.py") as mcp:
+    async with Client(Path(__file__).resolve().with_name("server.py")) as mcp:
 
         # Step 2: discover the tools the server offers
         tools = await mcp.list_tools()
