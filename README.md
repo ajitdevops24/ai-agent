@@ -60,6 +60,7 @@ ollama run qwen3:1.7b
 | [Day 05](./Day05-ai-document) | Document assistant: summarize, explain, ask | ✅ |
 | [Day 06](./Day06-first-rag) | First RAG: DevOps knowledge assistant with embeddings | ✅ |
 | [Day 07](./Day07-first-agent) | First AI agent: the model plans which tool to use, Python runs it | ✅ |
+| [Day 08](./Day08-mcp-basics) | MCP basics: the agent discovers and calls tools from an MCP server | ✅ |
 
 ## Author
 Ajit Kumar Satapathy
