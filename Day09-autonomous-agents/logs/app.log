@@ -1,0 +1,10 @@
+2026-11-17 09:58:01 INFO  api  Request GET /orders 200 45ms
+2026-11-17 09:58:14 INFO  api  Request GET /orders 200 52ms
+2026-11-17 09:59:02 WARN  db   Connection pool at 90% (18/20)
+2026-11-17 09:59:40 WARN  api  Request GET /orders 200 1840ms
+2026-11-17 10:00:03 ERROR db   Timeout waiting for a connection from the pool
+2026-11-17 10:00:03 ERROR api  Request GET /orders 500 5002ms
+2026-11-17 10:00:21 ERROR db   Timeout waiting for a connection from the pool
+2026-11-17 10:00:21 ERROR api  Request POST /checkout 500 5001ms
+2026-11-17 10:01:10 WARN  db   Connection pool at 100% (20/20)
+2026-11-17 10:01:45 ERROR api  Request GET /orders 500 5003ms

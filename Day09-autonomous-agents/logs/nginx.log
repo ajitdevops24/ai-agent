@@ -1,0 +1,4 @@
+2026-11-17 10:00:04 [error] upstream timed out (110: Connection timed out) while reading response header, upstream: http://127.0.0.1:8000/orders
+2026-11-17 10:00:22 [error] upstream timed out (110: Connection timed out) while reading response header, upstream: http://127.0.0.1:8000/checkout
+2026-11-17 10:01:46 [error] upstream timed out (110: Connection timed out) while reading response header, upstream: http://127.0.0.1:8000/orders
+2026-11-17 10:02:30 [info] GET /health 200
