@@ -4,7 +4,6 @@ from fastmcp import Client
 import asyncio
 import json
 import os
-from pathlib import Path
 
 # Load configuration
 load_dotenv()

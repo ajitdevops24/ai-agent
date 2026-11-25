@@ -3,3 +3,4 @@
 __pycache__/
 *.pyc
 .vscode/
+/Day08-mcp-basics/debugging-notes.md
